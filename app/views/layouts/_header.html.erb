@@ -1,0 +1,38 @@
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+  <a class="navbar-brand" href="#"><%= link_to 'COCKTAILS', root_path, class:"navbar-brand" %></a>
+  
+     
+     
+    
+    <div  class= "navbar-nav ms-auto mb-2 mb-lg-0" >
+       <form class="d-flex"  role="search">
+        <%= search_form_for @q, url: root_path, method: "GET", html: { class: 'form-inline' } do |f| %>
+      <%= f.search_field :name_or_preparation_cont, placeholder:"Search", class: "form-control mr-sm-2", type: "search", arialabel: "Search";%> 
+      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+      <span class="search"></span>
+    </form>
+    <% end %>
+    </div>
+  </div>
+</nav>
+
+
+
+  
+
+
+<nav class="navbar navbar-dark  bg-dark ">
+  <div class="container-fluid">
+    <%= link_to 'COCKTAILS', root_path, class:"navbar-brand", style:"text-decoration: none;" %>
+    
+    <form class="d-flex" role="search">
+      <%= search_form_for @q, url: root_path, method: "GET", html: { class: 'form-control me-2' } do |f| %> 
+      <%= f.search_field :name_or_preparation_cont, placeholder: "Search", class: "form-control mr-sm-2", type: "search", arialabel: "Search";%> 
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+  <% end %>
+
+  </div>
+</nav>
