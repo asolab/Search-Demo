@@ -3,8 +3,9 @@
 A mini ruby on rails code to learn about search functionalities in rails using rails gem "Ransack"
 
 
+References:
 
-references
+
 https://github.com/activerecord-hackery/ransack
 
 
